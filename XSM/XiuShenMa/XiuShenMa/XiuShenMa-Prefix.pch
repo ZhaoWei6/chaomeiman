@@ -1,0 +1,30 @@
+//
+//  XiuShenMa-Prefix.pch
+//  XiuShenMa
+//
+//  Created by Apple on 14/10/31.
+//  Copyright (c) 2014年 xiushenma. All rights reserved.
+//
+
+#ifndef XiuShenMa_XiuShenMa_Prefix_pch
+#define XiuShenMa_XiuShenMa_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#import "UIViewExt.h"
+#import "UIImage+XM.h"
+//#import "UIView+Shadow.h"
+#import "XMCommon.h"
+#import "Measurement.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD+MJ.h"
+#import "QHLabel.h"
+BOOL flag;//判断用户是否登录
+NSString *phone_Number;//手机号
+
+#endif

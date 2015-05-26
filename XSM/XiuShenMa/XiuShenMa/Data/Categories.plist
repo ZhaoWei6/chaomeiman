@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>iPhone</string>
+		<key>subcategories</key>
+		<array>
+			<string>iPhone4</string>
+			<string>iPhone4s</string>
+			<string>iPhone5</string>
+			<string>iPhone5s</string>
+			<string>iPhone5c</string>
+			<string>iPhone6</string>
+			<string>iPhone6s</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>小米</string>
+		<key>subcategories</key>
+		<array>
+			<string>小米2</string>
+			<string>小米2s</string>
+			<string>小米3</string>
+			<string>小米3s</string>
+			<string>小米4</string>
+			<string>小米4s</string>
+			<string>赣菜</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>锁型</string>
+		<key>subcategories</key>
+		<array>
+			<string>汽车锁</string>
+			<string>防盗锁</string>
+			<string>普通锁</string>
+		</array>
+	</dict>
+</array>
+</plist>

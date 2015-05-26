@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JHEditShopNameViewController">
+            <connections>
+                <outlet property="numberLabel" destination="5s9-UG-M1h" id="5ao-uL-ly3"/>
+                <outlet property="shopNameLabel" destination="Ucx-bp-uVK" id="kQW-kd-jQw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inputbox" translatesAutoresizingMaskIntoConstraints="NO" id="icL-1N-gka">
+                    <rect key="frame" x="15" y="115" width="290" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="cjh-hZ-Woi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请为你的店铺取个不同凡响的名字" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN2-AK-m1s">
+                    <rect key="frame" x="15" y="84" width="290" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="LzD-pb-2EA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.35294118520000001" green="0.48235297199999999" blue="0.60392159219999997" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="4-30字，字母或汉字" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ucx-bp-uVK">
+                    <rect key="frame" x="20" y="115" width="280" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rwu-4T-xSu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzg-9t-dPT">
+                    <rect key="frame" x="15" y="209" width="290" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="a04-ZH-EGv"/>
+                    </constraints>
+                    <state key="normal" title="确定" backgroundImage="anniu">
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClickedToOk:" destination="-1" eventType="touchUpInside" id="EUU-66-PaZ"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0/30)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5s9-UG-M1h">
+                    <rect key="frame" x="246" y="173" width="59" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="59" id="Jdl-Xc-gmc"/>
+                        <constraint firstAttribute="height" constant="21" id="W5g-d1-VJK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94901967050000002" green="0.94901967050000002" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="Ucx-bp-uVK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="2kl-G9-n9o"/>
+                <constraint firstItem="5s9-UG-M1h" firstAttribute="top" secondItem="Ucx-bp-uVK" secondAttribute="bottom" constant="14" id="4fO-Fy-9Is"/>
+                <constraint firstItem="yzg-9t-dPT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="6uf-aD-Lfq"/>
+                <constraint firstItem="yzg-9t-dPT" firstAttribute="top" secondItem="Ucx-bp-uVK" secondAttribute="bottom" constant="50" id="ABB-8b-Fib"/>
+                <constraint firstAttribute="trailing" secondItem="Ucx-bp-uVK" secondAttribute="trailing" constant="20" id="Cft-Zr-NQs"/>
+                <constraint firstAttribute="trailing" secondItem="CN2-AK-m1s" secondAttribute="trailing" constant="15" id="LKl-YQ-JsW"/>
+                <constraint firstItem="CN2-AK-m1s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="LYf-8s-BiG"/>
+                <constraint firstItem="CN2-AK-m1s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="TUL-Kx-r28"/>
+                <constraint firstItem="Ucx-bp-uVK" firstAttribute="top" secondItem="CN2-AK-m1s" secondAttribute="bottom" constant="10" id="YYh-W1-YTu"/>
+                <constraint firstAttribute="trailing" secondItem="icL-1N-gka" secondAttribute="trailing" constant="15" id="ehc-yo-jXD"/>
+                <constraint firstAttribute="trailing" secondItem="yzg-9t-dPT" secondAttribute="trailing" constant="15" id="hs5-eu-aVg"/>
+                <constraint firstItem="icL-1N-gka" firstAttribute="top" secondItem="CN2-AK-m1s" secondAttribute="bottom" constant="10" id="svb-Ew-fU6"/>
+                <constraint firstAttribute="trailing" secondItem="5s9-UG-M1h" secondAttribute="trailing" constant="15" id="xGk-LL-ErF"/>
+                <constraint firstItem="icL-1N-gka" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="xpy-1x-Vfi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="267" y="158"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="anniu" width="330" height="44"/>
+        <image name="inputbox" width="340" height="45"/>
+    </resources>
+</document>

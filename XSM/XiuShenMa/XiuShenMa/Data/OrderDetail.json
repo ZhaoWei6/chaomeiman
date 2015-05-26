@@ -1,0 +1,47 @@
+ [
+  {
+  "number":"8237164872",
+  "store":"[专注iPhone维修8周年]疯狂维修站",
+  "desc":"屏幕碎",
+  "price":100,
+  "category":"上门维修",
+  "phone_number":"1512678907",
+  "time":"2014-10-02  11:20",
+  "url":"http://img.donews.com/hy/20130712/7/10783605793902869599.jpg",
+  "state":"待评价",
+  "rating":null
+  },{
+  "number":"8237164872",
+  "store":"[专注iPhone维修8周年]疯狂维修站",
+  "desc":"屏幕碎",
+  
+  "category":"寄修",
+  "phone_number":"1512678907",
+  "time":"2014-10-02  11:20",
+  "url":"http://img.donews.com/hy/20130712/7/10783605793902869599.jpg",
+  "state":"已确认",
+  "rating":null
+  },{
+  "number":"8237164872",
+  "store":"[专注iPhone维修8周年]疯狂维修站",
+  "desc":"屏幕碎",
+  "price":100,
+  "category":"寄修",
+  "phone_number":"1512678907",
+  "time":"2014-10-02  11:20",
+  "url":"http://img.donews.com/hy/20130712/7/10783605793902869599.jpg",
+  "state":"订单确认中",
+  "rating":null
+  },{
+  "number":"8237164872",
+  "store":"[专注iPhone维修8周年]疯狂维修站",
+  "desc":"屏幕碎",
+  "price":100,
+  "category":"寄修",
+  "phone_number":"1512678907",
+  "time":"2014-10-02  11:20",
+  "url":"http://img.donews.com/hy/20130712/7/10783605793902869599.jpg",
+  "state":"检测完成",
+  "rating":null
+  }
+  ]

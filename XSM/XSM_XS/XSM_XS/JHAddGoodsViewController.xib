@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JHAddGoodsViewController">
+            <connections>
+                <outlet property="babyTitleLabel" destination="7mY-gq-BVW" id="plA-4I-uai"/>
+                <outlet property="baseView" destination="fls-dC-lM0" id="stM-H0-D1q"/>
+                <outlet property="goodImageView" destination="6tD-pB-KfT" id="zui-hL-MPA"/>
+                <outlet property="reallyPriceLabel" destination="4tM-wy-GEv" id="8jn-M2-nQW"/>
+                <outlet property="showPriceLabel" destination="9jy-BP-apC" id="1BH-ME-lZb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fls-dC-lM0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comcoa" translatesAutoresizingMaskIntoConstraints="NO" id="6tD-pB-KfT">
+                            <rect key="frame" x="20" y="74" width="280" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="oC8-mt-iZx"/>
+                            </constraints>
+                        </imageView>
+                        <view tag="10001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyz-Y6-eP0">
+                            <rect key="frame" x="20" y="211" width="280" height="35"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inputbox" translatesAutoresizingMaskIntoConstraints="NO" id="wo6-3y-knp">
+                                    <rect key="frame" x="0.0" y="0.0" width="280" height="35"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" tag="10001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="宝贝标题（10字以内）" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7mY-gq-BVW">
+                                    <rect key="frame" x="10" y="0.0" width="260" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="tHJ-Se-hLe"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUv-mY-KG1">
+                            <rect key="frame" x="20" y="261" width="135" height="35"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inputbox" translatesAutoresizingMaskIntoConstraints="NO" id="GQO-eU-MGL">
+                                    <rect key="frame" x="0.0" y="0.0" width="135" height="35"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="原价:￥" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSi-F7-qZO">
+                                    <rect key="frame" x="5" y="0.0" width="56" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" tag="10002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9jy-BP-apC">
+                                    <rect key="frame" x="62" y="0.0" width="65" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="npn-xh-HyA"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFA-jA-nLy">
+                            <rect key="frame" x="165" y="261" width="135" height="35"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inputbox" translatesAutoresizingMaskIntoConstraints="NO" id="gGn-ku-k9s">
+                                    <rect key="frame" x="0.0" y="0.0" width="135" height="35"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="标价:￥" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-AC-3f2">
+                                    <rect key="frame" x="5" y="0.0" width="56" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" tag="10003" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4tM-wy-GEv">
+                                    <rect key="frame" x="62" y="0.0" width="65" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="135" id="tcJ-2J-ody"/>
+                                <constraint firstAttribute="height" constant="35" id="w17-fN-QDN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bUv-mY-KG1" secondAttribute="trailing" constant="165" id="1jF-Ap-up3"/>
+                        <constraint firstAttribute="trailing" secondItem="lyz-Y6-eP0" secondAttribute="trailing" constant="20" id="8rL-4a-gdB"/>
+                        <constraint firstAttribute="trailing" secondItem="6tD-pB-KfT" secondAttribute="trailing" constant="20" id="CY1-d6-LMx"/>
+                        <constraint firstItem="bUv-mY-KG1" firstAttribute="top" secondItem="AFA-jA-nLy" secondAttribute="top" id="ED6-kx-ebz"/>
+                        <constraint firstItem="bUv-mY-KG1" firstAttribute="leading" secondItem="fls-dC-lM0" secondAttribute="leading" constant="20" id="ISY-nM-nkO"/>
+                        <constraint firstItem="lyz-Y6-eP0" firstAttribute="leading" secondItem="fls-dC-lM0" secondAttribute="leading" constant="20" id="M9c-jh-GSp"/>
+                        <constraint firstItem="AFA-jA-nLy" firstAttribute="trailing" secondItem="lyz-Y6-eP0" secondAttribute="trailing" id="NFq-7l-sZI"/>
+                        <constraint firstItem="bUv-mY-KG1" firstAttribute="top" secondItem="lyz-Y6-eP0" secondAttribute="bottom" constant="15" id="NkV-jW-FcO"/>
+                        <constraint firstItem="6tD-pB-KfT" firstAttribute="top" secondItem="fls-dC-lM0" secondAttribute="top" constant="74" id="Z7e-s9-jIb"/>
+                        <constraint firstAttribute="trailing" secondItem="AFA-jA-nLy" secondAttribute="trailing" constant="20" id="ZXT-7H-476"/>
+                        <constraint firstItem="bUv-mY-KG1" firstAttribute="bottom" secondItem="AFA-jA-nLy" secondAttribute="bottom" id="akX-VV-cnF"/>
+                        <constraint firstItem="AFA-jA-nLy" firstAttribute="top" secondItem="lyz-Y6-eP0" secondAttribute="bottom" constant="15" id="cFp-MX-4jT"/>
+                        <constraint firstItem="AFA-jA-nLy" firstAttribute="leading" secondItem="bUv-mY-KG1" secondAttribute="trailing" constant="10" id="cr1-US-f0d"/>
+                        <constraint firstItem="6tD-pB-KfT" firstAttribute="leading" secondItem="fls-dC-lM0" secondAttribute="leading" constant="20" id="ftN-O4-JIq"/>
+                        <constraint firstItem="lyz-Y6-eP0" firstAttribute="top" secondItem="6tD-pB-KfT" secondAttribute="bottom" constant="17" id="sgs-tm-ite"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fls-dC-lM0" secondAttribute="trailing" id="IRx-gR-Z8W"/>
+                <constraint firstAttribute="bottom" secondItem="fls-dC-lM0" secondAttribute="bottom" id="W5L-gp-6iB"/>
+                <constraint firstItem="fls-dC-lM0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Z4x-So-02J"/>
+                <constraint firstItem="fls-dC-lM0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l5T-hw-oJT"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="21" y="134"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="comcoa" width="192" height="79"/>
+        <image name="inputbox" width="340" height="45"/>
+    </resources>
+</document>

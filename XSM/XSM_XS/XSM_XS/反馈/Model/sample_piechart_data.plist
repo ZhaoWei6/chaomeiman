@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>data</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>我是一只小鸭子</string>
+			<key>value</key>
+			<integer>20</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>一群逗比</string>
+			<key>value</key>
+			<integer>10</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>沙发沙发斯蒂芬</string>
+			<key>value</key>
+			<integer>10</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>逗比的世界</string>
+			<key>value</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>李江辉是最帅的</string>
+			<key>value</key>
+			<integer>45</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

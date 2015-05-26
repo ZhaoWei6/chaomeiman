@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JHCommonAddressTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6z1-xH-RLN">
+                        <rect key="frame" x="270" y="0.0" width="50" height="89"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="WPs-N8-HtC"/>
+                        </constraints>
+                        <state key="normal" image="icon_editing"/>
+                        <state key="highlighted" image="icon_editing">
+                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonClickedToEditing:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5ZH-3H-zrL"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李江辉 先生 13388888888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwR-kI-QKR">
+                        <rect key="frame" x="13" y="13" width="252" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cY6-om-ohC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市海淀区上地三街" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHD-54-KCc">
+                        <rect key="frame" x="13" y="55" width="252" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="mzM-dO-RrL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6z1-xH-RLN" firstAttribute="leading" secondItem="oHD-54-KCc" secondAttribute="trailing" constant="5" id="52r-K5-3Vh"/>
+                    <constraint firstAttribute="bottom" secondItem="6z1-xH-RLN" secondAttribute="bottom" id="IpO-yW-ntd"/>
+                    <constraint firstItem="oHD-54-KCc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="JE0-Q8-vkp"/>
+                    <constraint firstItem="6z1-xH-RLN" firstAttribute="leading" secondItem="rwR-kI-QKR" secondAttribute="trailing" constant="5" id="MaP-7l-teY"/>
+                    <constraint firstItem="rwR-kI-QKR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="ddK-eo-KTM"/>
+                    <constraint firstItem="6z1-xH-RLN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eoc-IR-ITj"/>
+                    <constraint firstItem="rwR-kI-QKR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="i3B-9Y-qQb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oHD-54-KCc" secondAttribute="bottom" constant="5" id="sH5-ZR-33R"/>
+                    <constraint firstAttribute="trailing" secondItem="6z1-xH-RLN" secondAttribute="trailing" id="vm9-82-RNq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="oHD-54-KCc" id="REA-oH-Qbe"/>
+                <outlet property="nameLabel" destination="rwR-kI-QKR" id="ZgX-E0-WCd"/>
+            </connections>
+            <point key="canvasLocation" x="292" y="-63"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_editing" width="30" height="30"/>
+    </resources>
+</document>
