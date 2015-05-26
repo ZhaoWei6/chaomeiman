@@ -1,0 +1,268 @@
+{\rtf1\ansi\ansicpg936\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 STHeitiSC-Light;\f2\froman\fcharset0 TimesNewRomanPSMT;
+\f3\fnil\fcharset0 MicrosoftYaHei;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red170\green13\blue145;\red92\green38\blue153;
+\red196\green26\blue22;\red46\green13\blue110;\red28\green0\blue207;\red63\green110\blue116;\red83\green83\blue83;
+}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab674
+\pard\tx674\pardeftab674\pardirnatural
+
+\f0\fs28 \cf2 \CocoaLigature0 //
+\f1 \'c0\'fb\'d3\'c3\'d5\'fd\'d4\'f2\'b1\'ed\'b4\'ef\'ca\'bd\'d1\'e9\'d6\'a4\'d3\'ca\'cf\'e4\'b5\'c4\'ba\'cf\'b7\'a8\'d0\'d4
+\f0 \cf0 \
++(\cf3 BOOL\cf0 )isValidateEmail:(\cf4 NSString\cf0  *)email \{\
+    \
+    \cf4 NSString\cf0  *emailRegex = \cf5 @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]\{2,4\}"\cf0 ;\
+    \cf4 NSPredicate\cf0  *emailTest = [\cf4 NSPredicate\cf0  \cf6 predicateWithFormat\cf0 :\cf5 @"SELF MATCHES %@"\cf0 , emailRegex];\
+    \cf3 return\cf0  [emailTest \cf6 evaluateWithObject\cf0 :email];\
+\}\
+\
+\
+\pard\tx674\pardeftab420\ri1060
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \'c9\'cf\'b4\'ab\'cd\'bc\'c6\'ac
+\f2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\tx674\pardeftab420\ri1060
+
+\f0 \cf0 \expnd0\expndtw0\kerning0
+NSData * imageData = UIImagePNGRepresentation(self.circleImage);//image
+\f1 \expnd0\expndtw0\kerning0
+\'b4\'f2\'b0\'fc\'b3\'c9
+\f0 \expnd0\expndtw0\kerning0
+data
+\f2 \expnd0\expndtw0\kerning0
+\
+
+\f0 \expnd0\expndtw0\kerning0
+            \
+            NSString * urlStr1 = [NSString stringWithFormat:@"http://123.57.14.69/api.php?m=common&a=upload"];\
+            \
+            NSURL *url1 = [NSURL URLWithString:urlStr1];\
+            NSMutableURLRequest *request1 = [[NSMutableURLRequest alloc]initWithURL:url1 cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];\
+            [request1 setHTTPMethod:@"POST"];\
+            NSString *str2 = [NSString stringWithFormat:@"uid=%d&image=%@",self.userUID,imageData];//
+\f1 \expnd0\expndtw0\kerning0
+\'c9\'e8\'d6\'c3\'b2\'ce\'ca\'fd
+\f2 \expnd0\expndtw0\kerning0
+\
+
+\f0 \expnd0\expndtw0\kerning0
+            NSData *data1 = [str2 dataUsingEncoding:NSUTF8StringEncoding];\
+            [request1 setHTTPBody:data1];//
+\f1 \expnd0\expndtw0\kerning0
+\'b0\'d1
+\f0 \expnd0\expndtw0\kerning0
+data1
+\f1 \expnd0\expndtw0\kerning0
+\'c9\'e8\'d6\'c3\'b3\'c9
+\f0 \expnd0\expndtw0\kerning0
+request
+\f1 \expnd0\expndtw0\kerning0
+\'b5\'c4
+\f0 \expnd0\expndtw0\kerning0
+body
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\tx674\pardeftab420\fi1680\ri1060
+
+\f0 \cf0 \expnd0\expndtw0\kerning0
+NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:request1 delegate:self];
+\f2 \expnd0\expndtw0\kerning0
+\
+\
+\
+\pard\tx674\pardeftab420\ri1060
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+\'bb\'f1\'c8\'a1
+\f0 \expnd0\expndtw0\kerning0
+json
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\tx674\pardeftab420\ri1060
+
+\f0 \cf0 \expnd0\expndtw0\kerning0
+    \cf4 \expnd0\expndtw0\kerning0
+NSURL\cf0 \expnd0\expndtw0\kerning0
+ *url=[\cf4 \expnd0\expndtw0\kerning0
+NSURL\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+URLWithString\cf0 \expnd0\expndtw0\kerning0
+:\cf5 \expnd0\expndtw0\kerning0
+@"http://www.baidu.com"\cf0 \expnd0\expndtw0\kerning0
+];\
+    \cf4 \expnd0\expndtw0\kerning0
+NSMutableURLRequest\cf0 \expnd0\expndtw0\kerning0
+ *request=[[\cf4 \expnd0\expndtw0\kerning0
+NSMutableURLRequest\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+alloc\cf0 \expnd0\expndtw0\kerning0
+]\cf6 \expnd0\expndtw0\kerning0
+initWithURL\cf0 \expnd0\expndtw0\kerning0
+:url \cf6 \expnd0\expndtw0\kerning0
+cachePolicy\cf0 \expnd0\expndtw0\kerning0
+:\cf6 \expnd0\expndtw0\kerning0
+NSURLRequestUseProtocolCachePolicy\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+timeoutInterval\cf0 \expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+10\cf0 \expnd0\expndtw0\kerning0
+];\
+    [request \cf6 \expnd0\expndtw0\kerning0
+setHTTPMethod\cf0 \expnd0\expndtw0\kerning0
+:\cf5 \expnd0\expndtw0\kerning0
+@"GET"\cf0 \expnd0\expndtw0\kerning0
+];\
+    [\cf4 \expnd0\expndtw0\kerning0
+NSURLConnection\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+connectionWithRequest\cf0 \expnd0\expndtw0\kerning0
+:request \cf6 \expnd0\expndtw0\kerning0
+delegate\cf0 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+self\cf0 \expnd0\expndtw0\kerning0
+];\
+    \cf3 \expnd0\expndtw0\kerning0
+self\cf0 \expnd0\expndtw0\kerning0
+.\cf8 \expnd0\expndtw0\kerning0
+urlData\cf0 \expnd0\expndtw0\kerning0
+=[[\cf4 \expnd0\expndtw0\kerning0
+NSMutableData\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+alloc\cf0 \expnd0\expndtw0\kerning0
+]\cf6 \expnd0\expndtw0\kerning0
+init\cf0 \expnd0\expndtw0\kerning0
+];\
+    \
+    \cf3 \expnd0\expndtw0\kerning0
+self\cf0 \expnd0\expndtw0\kerning0
+.\cf8 \expnd0\expndtw0\kerning0
+window\cf0 \expnd0\expndtw0\kerning0
+.\cf4 \expnd0\expndtw0\kerning0
+backgroundColor\cf0 \expnd0\expndtw0\kerning0
+ = [\cf4 \expnd0\expndtw0\kerning0
+UIColor\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+whiteColor\cf0 \expnd0\expndtw0\kerning0
+];\
+    [\cf3 \expnd0\expndtw0\kerning0
+self\cf0 \expnd0\expndtw0\kerning0
+.\cf8 \expnd0\expndtw0\kerning0
+window\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+makeKeyAndVisible\cf0 \expnd0\expndtw0\kerning0
+];\
+    \cf3 \expnd0\expndtw0\kerning0
+return\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+YES\cf0 \expnd0\expndtw0\kerning0
+;\
+\}\
+\
+- (\cf3 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)connection:(\cf4 \expnd0\expndtw0\kerning0
+NSURLConnection\cf0 \expnd0\expndtw0\kerning0
+ *)connection didFailWithError:(\cf4 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *)error\{\
+    \cf6 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf5 \expnd0\expndtw0\kerning0
+@"error"\cf0 \expnd0\expndtw0\kerning0
+);\
+\}\
+\
+- (\cf3 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)connection:(\cf4 \expnd0\expndtw0\kerning0
+NSURLConnection\cf0 \expnd0\expndtw0\kerning0
+ *)connection didReceiveData:(\cf4 \expnd0\expndtw0\kerning0
+NSData\cf0 \expnd0\expndtw0\kerning0
+ *)data\{\
+    [\cf3 \expnd0\expndtw0\kerning0
+self\cf0 \expnd0\expndtw0\kerning0
+.\cf8 \expnd0\expndtw0\kerning0
+urlData\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+appendData\cf0 \expnd0\expndtw0\kerning0
+:data];\
+\}\
+\
+- (\cf3 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)connectionDidFinishLoading:(\cf4 \expnd0\expndtw0\kerning0
+NSURLConnection\cf0 \expnd0\expndtw0\kerning0
+ *)connection\{\
+    \cf4 \expnd0\expndtw0\kerning0
+NSString\cf0 \expnd0\expndtw0\kerning0
+ *str=[[\cf4 \expnd0\expndtw0\kerning0
+NSString\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+alloc\cf0 \expnd0\expndtw0\kerning0
+]\cf6 \expnd0\expndtw0\kerning0
+initWithData\cf0 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+self\cf0 \expnd0\expndtw0\kerning0
+.\cf8 \expnd0\expndtw0\kerning0
+urlData\cf0 \expnd0\expndtw0\kerning0
+ \cf6 \expnd0\expndtw0\kerning0
+encoding\cf0 \expnd0\expndtw0\kerning0
+:\cf6 \expnd0\expndtw0\kerning0
+NSUTF8StringEncoding\cf0 \expnd0\expndtw0\kerning0
+];\
+    \cf6 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf5 \expnd0\expndtw0\kerning0
+@"%@"\cf0 \expnd0\expndtw0\kerning0
+,str);\
+\pard\tx674\pardeftab420\fi1680\ri1060
+\cf0 \expnd0\expndtw0\kerning0
+\}\
+
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\tx674\pardeftab674\pardirnatural
+
+\f0 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature0 - (instancetype)init \{\
+    if (self = [super init]) \{\
+        self.requestSerializer = [AFHTTPRequestSerializer serializer];\
+        [self.requestSerializer setValue:@"XMLHttpRequest" forHTTPHeaderField:@"X-Requested-With"];\
+        self.responseSerializer = [AFHTTPResponseSerializer serializer]; \
+        self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/javascript",@"text/application",@"text/plain",@"text/html",@"text/json",@"application/json", nil];\
+    \}\
+    return self;\
+\}\
+\
+``` objective-c  JSON\
+NSURL *url = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/public_timeline.json"];\
+NSURLRequest *request = [NSURLRequest requestWithURL:url];\
+AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) \{\
+    NSLog(@"Public Timeline: %@", JSON);\
+\} failure:nil];\
+[operation start];\
+\
+
+\f1 \'ca\'d6\'bb\'fa\'ba\'c5
+\f0 \kerning1\expnd0\expndtw0 \
+18646101914\
+122.115.47.219\
+https://qing.wps.cn/l/b0e110e1206e4603ae9b66ad044f92a3\
+\
+\pard\tx674\pardeftab674\pardirnatural
+
+\f1 \cf0 \'b7\'d6\'cf\'ed\
+qq  \'ce\'a2\'d0\'c5\
+\
+\pard\pardeftab720\sa400
+
+\f3 \cf9 \CocoaLigature1 SystemConfiguration.framework\uc0\u8232 QuartzCore.framework \u8232 CoreTelephony.framework\u8232 libicucore.dylib\u8232 libz.1.2.5.dylib\u8232 Security.framework
+\f0 \cf0 \CocoaLigature0 \
+\pard\tx674\pardeftab674\pardirnatural
+\cf0 \
+}

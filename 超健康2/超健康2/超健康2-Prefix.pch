@@ -1,0 +1,102 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import"LoginUser.h"
+#import"UIViewExt.h"
+#import"BaseController.h"
+#endif
+
+#define kDeviceWidth [UIScreen mainScreen].bounds.size.width
+#define kDeviceHeight [UIScreen mainScreen].bounds.size.height
+
+#define kSurePublic @"kSurePublic"
+#define kText @"kText"
+
+#define kAdvice @"kAdvice"
+#define kBool @"kBool"
+#define kFeedBack @"kFeedBack"
+#define kTime @"kTime"
+
+//发布动态
+#define kDText @"kDText"
+#define kDBool @"kDBool"
+
+//专家ID
+#define E_id @"E_id"
+
+//用户ID
+#define Member_id @"Member_id"
+#define Member_phone @"member_phone"
+#define Member_head @"member_head"
+#define Member_age @"member_age"
+#define Member_nickname @"member_nickname"
+#define Member_gender @"member_gender"
+#define Member_health_description @"member_health_description"
+#define ChangeName @"changeName"
+#define SelectNumber @"selectNumber"
+
+#define maxImageWidth 120
+#define maxImageHeight 150
+
+//个人资料
+#define kPersonHeadImage @"kPersonHeadImage"
+#define kPersonHeadName @"kPersonHeadName"
+#define kPersonGender @"kPersonGender"
+#define kPersonAge @"kPersonAge"
+#define kPersonLanguage @"kPersonLanguage"
+
+//xmpp信息  主机名
+//127.0.0.1   WIN-GU0GIS7FIQ7 iz25jr2uqbnz
+#define kHostName      @"iz25jr2uqbnz"
+
+#define kXMPPUserNameKey    @"xmppUserName" //姓名
+#define kXMPPPasswordKey    @"xmppPassword" //密码
+
+//ip 地址
+#define kXMPPHostNameKey    @"112.126.78.209" //  122.115.47.219  192.168.1.104
+
+#define ChaojiankangServer  @"http://112.126.78.209:8080/Nutrition" //服务器地址 192.168.1.104
+#define GetVerification(field, action) [NSString stringWithFormat:@"%@/%@/%@.do", ChaojiankangServer, field, action]
+
+//经纬度
+#define Longitu @"longitude"
+#define Latitu @"latitude"
+
+#define MessageNum @"messageNum"
+#define MessageNumArr @"messageNumArray"
+
+#define KNoticationCenter @"KNoticationCenter"
+
+#define FORMAT(format, ...) [NSString stringWithFormat:(format), ##__VA_ARGS__]
+
+//全局变量
+#define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#define iS7(a,b)  (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)?a:b)
+#define IOS7_OR_LATER  ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending)
+#define kFilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"userNames.data"]
+
+#ifdef DEBUG
+#define MyLog(...) NSLog(__VA_ARGS__)
+#else
+#define MyLog(...)
+#endif
+
+#if 1
+#define Debug() printf("%s %s %d\n",\
+__FILE__,__func__,__LINE__);
+#else
+#define Debug()
+#endif
+
